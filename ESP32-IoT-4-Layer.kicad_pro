@@ -412,6 +412,18 @@
     [
       "382f43dc-9520-488d-9e1c-8b7cca928d11",
       "Root"
+    ],
+    [
+      "df1e9d41-aab0-4668-b09a-ac542d3143c3",
+      "ESP32-C3-02"
+    ],
+    [
+      "ea3aa184-e2b5-4296-aab4-7718a5b157d0",
+      "Sensors"
+    ],
+    [
+      "f9588ee2-2cc7-462c-a967-a4c583fd61fe",
+      "User Interface"
     ]
   ],
   "text_variables": {}
