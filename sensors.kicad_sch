@@ -2,7 +2,7 @@
 	(version 20250114)
 	(generator "eeschema")
 	(generator_version "9.0")
-	(uuid "6576f3f7-51c0-49bc-8e25-66993bcf7cc6")
+	(uuid "4c11ebb1-65dd-44a4-a09b-25b6bef75a9a")
 	(paper "A4")
 	(lib_symbols
 		(symbol "BME280:BME280"
@@ -49,16 +49,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "MF" "Bosch"
+			(property "Description" "Integrated pressure, humidity and temperature sensor; 8-pin 2.5x2.5x0.93mm LGA"
 				(at 0 0 0)
 				(effects
 					(font
@@ -68,7 +59,7 @@
 					(hide yes)
 				)
 			)
-			(property "DESCRIPTION" "Integrated pressure, humidity and temperature sensor; 8-pin 2.5x2.5x0.93mm LGA"
+			(property "MF" "Bosch"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2814,7 +2805,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0395363f-a438-4148-9728-aa44c45b4902")
-		(property "Reference" "C20"
+		(property "Reference" "C16"
 			(at 119.888 177.8 90)
 			(effects
 				(font
@@ -2830,7 +2821,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 113.03 174.9552 0)
 			(effects
 				(font
@@ -2866,7 +2857,7 @@
 		(instances
 			(project "ESP32-IoT-4-Layer"
 				(path "/382f43dc-9520-488d-9e1c-8b7cca928d11/df1e9d41-aab0-4668-b09a-ac542d3143c3/ea3aa184-e2b5-4296-aab4-7718a5b157d0"
-					(reference "C20")
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -2882,7 +2873,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "04cad4ee-d55a-465d-8161-a0277e0c3577")
-		(property "Reference" "R23"
+		(property "Reference" "R29"
 			(at 228.6 53.3399 0)
 			(effects
 				(font
@@ -2900,7 +2891,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 224.282 54.61 90)
 			(effects
 				(font
@@ -2936,7 +2927,7 @@
 		(instances
 			(project ""
 				(path "/382f43dc-9520-488d-9e1c-8b7cca928d11/df1e9d41-aab0-4668-b09a-ac542d3143c3/ea3aa184-e2b5-4296-aab4-7718a5b157d0"
-					(reference "R23")
+					(reference "R29")
 					(unit 1)
 				)
 			)
@@ -2951,7 +2942,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "058dc6da-15f3-4420-a9c8-ebb42abf9c09")
-		(property "Reference" "R28"
+		(property "Reference" "R23"
 			(at 54.61 138.43 0)
 			(effects
 				(font
@@ -2967,7 +2958,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 60.198 137.16 90)
 			(effects
 				(font
@@ -3003,7 +2994,7 @@
 		(instances
 			(project "ESP32-IoT-4-Layer"
 				(path "/382f43dc-9520-488d-9e1c-8b7cca928d11/df1e9d41-aab0-4668-b09a-ac542d3143c3/ea3aa184-e2b5-4296-aab4-7718a5b157d0"
-					(reference "R28")
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -3018,7 +3009,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0ea1c609-0ff8-40ff-b6b3-ab531a002c11")
-		(property "Reference" "R31"
+		(property "Reference" "R28"
 			(at 116.84 162.56 90)
 			(effects
 				(font
@@ -3034,7 +3025,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 116.84 169.418 90)
 			(effects
 				(font
@@ -3070,7 +3061,7 @@
 		(instances
 			(project ""
 				(path "/382f43dc-9520-488d-9e1c-8b7cca928d11/df1e9d41-aab0-4668-b09a-ac542d3143c3/ea3aa184-e2b5-4296-aab4-7718a5b157d0"
-					(reference "R31")
+					(reference "R28")
 					(unit 1)
 				)
 			)
@@ -3104,7 +3095,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 153.3652 153.67 0)
 			(effects
 				(font
@@ -3156,7 +3147,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1c1a66e5-441a-4903-af31-2359c73f87dd")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR049"
 			(at 226.06 50.8 0)
 			(effects
 				(font
@@ -3206,7 +3197,7 @@
 		(instances
 			(project "ESP32-IoT-4-Layer"
 				(path "/382f43dc-9520-488d-9e1c-8b7cca928d11/df1e9d41-aab0-4668-b09a-ac542d3143c3/ea3aa184-e2b5-4296-aab4-7718a5b157d0"
-					(reference "#PWR031")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -3222,7 +3213,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "387be0e6-2e6d-4efc-80a1-f66fad5a57c8")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR045"
 			(at 119.38 76.2 0)
 			(effects
 				(font
@@ -3272,7 +3263,7 @@
 		(instances
 			(project "ESP32-IoT-4-Layer"
 				(path "/382f43dc-9520-488d-9e1c-8b7cca928d11/df1e9d41-aab0-4668-b09a-ac542d3143c3/ea3aa184-e2b5-4296-aab4-7718a5b157d0"
-					(reference "#PWR029")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -3288,7 +3279,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3ef31545-bd6d-41b0-af58-d7084de4705b")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR048"
 			(at 191.77 60.96 0)
 			(effects
 				(font
@@ -3339,7 +3330,7 @@
 		(instances
 			(project "ESP32-IoT-4-Layer"
 				(path "/382f43dc-9520-488d-9e1c-8b7cca928d11/df1e9d41-aab0-4668-b09a-ac542d3143c3/ea3aa184-e2b5-4296-aab4-7718a5b157d0"
-					(reference "#PWR033")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -3513,7 +3504,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "57ab8021-4965-4c2c-9b43-da25fd6897b6")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR039"
 			(at 27.94 130.81 0)
 			(effects
 				(font
@@ -3564,7 +3555,7 @@
 		(instances
 			(project "ESP32-IoT-4-Layer"
 				(path "/382f43dc-9520-488d-9e1c-8b7cca928d11/df1e9d41-aab0-4668-b09a-ac542d3143c3/ea3aa184-e2b5-4296-aab4-7718a5b157d0"
-					(reference "#PWR043")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -3749,7 +3740,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5fc4347c-6a31-4a3d-98d8-b503a4df95b0")
-		(property "Reference" "C16"
+		(property "Reference" "C15"
 			(at 44.45 123.19 90)
 			(effects
 				(font
@@ -3765,7 +3756,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 48.26 129.8448 0)
 			(effects
 				(font
@@ -3801,7 +3792,7 @@
 		(instances
 			(project "ESP32-IoT-4-Layer"
 				(path "/382f43dc-9520-488d-9e1c-8b7cca928d11/df1e9d41-aab0-4668-b09a-ac542d3143c3/ea3aa184-e2b5-4296-aab4-7718a5b157d0"
-					(reference "C16")
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -3816,7 +3807,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "665f4220-da3b-47dd-a7f4-15f14e9927c8")
-		(property "Reference" "R25"
+		(property "Reference" "R24"
 			(at 61.214 54.61 0)
 			(effects
 				(font
@@ -3834,7 +3825,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 57.912 55.88 90)
 			(effects
 				(font
@@ -3870,7 +3861,7 @@
 		(instances
 			(project "ESP32-IoT-4-Layer"
 				(path "/382f43dc-9520-488d-9e1c-8b7cca928d11/df1e9d41-aab0-4668-b09a-ac542d3143c3/ea3aa184-e2b5-4296-aab4-7718a5b157d0"
-					(reference "R25")
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -3886,7 +3877,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6802e56a-82c0-4792-8a52-6162683b102c")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR047"
 			(at 152.4 166.37 0)
 			(effects
 				(font
@@ -3936,7 +3927,7 @@
 		(instances
 			(project "ESP32-IoT-4-Layer"
 				(path "/382f43dc-9520-488d-9e1c-8b7cca928d11/df1e9d41-aab0-4668-b09a-ac542d3143c3/ea3aa184-e2b5-4296-aab4-7718a5b157d0"
-					(reference "#PWR037")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -3952,7 +3943,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "69204512-320a-4200-ab4e-f8a6bca1ba44")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR046"
 			(at 152.4 144.78 0)
 			(effects
 				(font
@@ -4002,7 +3993,7 @@
 		(instances
 			(project "ESP32-IoT-4-Layer"
 				(path "/382f43dc-9520-488d-9e1c-8b7cca928d11/df1e9d41-aab0-4668-b09a-ac542d3143c3/ea3aa184-e2b5-4296-aab4-7718a5b157d0"
-					(reference "#PWR035")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -4017,7 +4008,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7e480c10-a5b5-4561-8abd-b107e5b85ae2")
-		(property "Reference" "R26"
+		(property "Reference" "R22"
 			(at 54.61 127 0)
 			(effects
 				(font
@@ -4033,7 +4024,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 60.198 125.73 90)
 			(effects
 				(font
@@ -4069,7 +4060,7 @@
 		(instances
 			(project "ESP32-IoT-4-Layer"
 				(path "/382f43dc-9520-488d-9e1c-8b7cca928d11/df1e9d41-aab0-4668-b09a-ac542d3143c3/ea3aa184-e2b5-4296-aab4-7718a5b157d0"
-					(reference "R26")
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -4084,7 +4075,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8dcdea82-17b3-4eb2-b42e-ec7470991760")
-		(property "Reference" "R30"
+		(property "Reference" "R27"
 			(at 82.55 160.02 0)
 			(effects
 				(font
@@ -4100,7 +4091,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 88.138 158.75 90)
 			(effects
 				(font
@@ -4136,7 +4127,7 @@
 		(instances
 			(project "ESP32-IoT-4-Layer"
 				(path "/382f43dc-9520-488d-9e1c-8b7cca928d11/df1e9d41-aab0-4668-b09a-ac542d3143c3/ea3aa184-e2b5-4296-aab4-7718a5b157d0"
-					(reference "R30")
+					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -4151,7 +4142,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9c809d03-b822-4f2d-a3df-b3ece5ef7aa5")
-		(property "Reference" "R27"
+		(property "Reference" "R25"
 			(at 67.31 138.43 0)
 			(effects
 				(font
@@ -4167,7 +4158,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 72.898 137.16 90)
 			(effects
 				(font
@@ -4203,7 +4194,7 @@
 		(instances
 			(project "ESP32-IoT-4-Layer"
 				(path "/382f43dc-9520-488d-9e1c-8b7cca928d11/df1e9d41-aab0-4668-b09a-ac542d3143c3/ea3aa184-e2b5-4296-aab4-7718a5b157d0"
-					(reference "R27")
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -4218,7 +4209,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a051fddf-354b-403e-b46f-da4ba67bdc30")
-		(property "Reference" "R24"
+		(property "Reference" "R21"
 			(at 53.594 54.61 0)
 			(effects
 				(font
@@ -4236,7 +4227,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 50.292 55.88 90)
 			(effects
 				(font
@@ -4272,7 +4263,7 @@
 		(instances
 			(project ""
 				(path "/382f43dc-9520-488d-9e1c-8b7cca928d11/df1e9d41-aab0-4668-b09a-ac542d3143c3/ea3aa184-e2b5-4296-aab4-7718a5b157d0"
-					(reference "R24")
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -4288,7 +4279,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a1ec3959-9a73-4b9f-99ad-a17eccbf4d17")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR041"
 			(at 71.12 49.53 0)
 			(effects
 				(font
@@ -4338,7 +4329,7 @@
 		(instances
 			(project ""
 				(path "/382f43dc-9520-488d-9e1c-8b7cca928d11/df1e9d41-aab0-4668-b09a-ac542d3143c3/ea3aa184-e2b5-4296-aab4-7718a5b157d0"
-					(reference "#PWR023")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -4354,7 +4345,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a2120257-0457-496a-bc93-7ef4e40fe9ea")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR040"
 			(at 64.77 114.3 0)
 			(effects
 				(font
@@ -4404,7 +4395,7 @@
 		(instances
 			(project ""
 				(path "/382f43dc-9520-488d-9e1c-8b7cca928d11/df1e9d41-aab0-4668-b09a-ac542d3143c3/ea3aa184-e2b5-4296-aab4-7718a5b157d0"
-					(reference "#PWR041")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -4420,7 +4411,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a635a247-7234-44a6-8be7-69aedc96ef92")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR043"
 			(at 91.44 177.8 0)
 			(effects
 				(font
@@ -4470,7 +4461,7 @@
 		(instances
 			(project "ESP32-IoT-4-Layer"
 				(path "/382f43dc-9520-488d-9e1c-8b7cca928d11/df1e9d41-aab0-4668-b09a-ac542d3143c3/ea3aa184-e2b5-4296-aab4-7718a5b157d0"
-					(reference "#PWR039")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -4486,7 +4477,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c4e03244-f017-417d-ba27-f8f2c7a9b1d4")
-		(property "Reference" "U2"
+		(property "Reference" "U6"
 			(at 92.71 38.1 0)
 			(effects
 				(font
@@ -4687,7 +4678,7 @@
 		(instances
 			(project ""
 				(path "/382f43dc-9520-488d-9e1c-8b7cca928d11/df1e9d41-aab0-4668-b09a-ac542d3143c3/ea3aa184-e2b5-4296-aab4-7718a5b157d0"
-					(reference "U2")
+					(reference "U6")
 					(unit 1)
 				)
 			)
@@ -4882,7 +4873,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d22307ac-03d0-4a57-ab28-40391a58b8db")
-		(property "Reference" "C15"
+		(property "Reference" "C17"
 			(at 123.19 55.8799 0)
 			(effects
 				(font
@@ -4900,7 +4891,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 120.3452 60.96 0)
 			(effects
 				(font
@@ -4936,7 +4927,7 @@
 		(instances
 			(project ""
 				(path "/382f43dc-9520-488d-9e1c-8b7cca928d11/df1e9d41-aab0-4668-b09a-ac542d3143c3/ea3aa184-e2b5-4296-aab4-7718a5b157d0"
-					(reference "C15")
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -4952,7 +4943,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d882a001-9788-46e1-9149-32e591f2fe0b")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR044"
 			(at 119.38 45.72 0)
 			(effects
 				(font
@@ -5002,7 +4993,7 @@
 		(instances
 			(project ""
 				(path "/382f43dc-9520-488d-9e1c-8b7cca928d11/df1e9d41-aab0-4668-b09a-ac542d3143c3/ea3aa184-e2b5-4296-aab4-7718a5b157d0"
-					(reference "#PWR027")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -5017,7 +5008,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e10a3a84-41f8-432d-a44a-1034d7fad24a")
-		(property "Reference" "R29"
+		(property "Reference" "R26"
 			(at 67.31 161.29 0)
 			(effects
 				(font
@@ -5033,7 +5024,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 72.898 160.02 90)
 			(effects
 				(font
@@ -5069,7 +5060,7 @@
 		(instances
 			(project "ESP32-IoT-4-Layer"
 				(path "/382f43dc-9520-488d-9e1c-8b7cca928d11/df1e9d41-aab0-4668-b09a-ac542d3143c3/ea3aa184-e2b5-4296-aab4-7718a5b157d0"
-					(reference "R29")
+					(reference "R26")
 					(unit 1)
 				)
 			)
@@ -5085,7 +5076,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fea5fdaf-179c-45e7-9aa0-048153feee6f")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR042"
 			(at 76.2 76.2 0)
 			(effects
 				(font
@@ -5135,7 +5126,7 @@
 		(instances
 			(project ""
 				(path "/382f43dc-9520-488d-9e1c-8b7cca928d11/df1e9d41-aab0-4668-b09a-ac542d3143c3/ea3aa184-e2b5-4296-aab4-7718a5b157d0"
-					(reference "#PWR025")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
