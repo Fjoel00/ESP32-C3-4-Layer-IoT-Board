@@ -7336,7 +7336,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ESP32-C3-WROOM-02-H4:MODULE_ESP32-C3-WROOM-02-H4"
+		(property "Footprint" "ESP32 IoT Project Libraries:MODULE_ESP32-C3-WROOM-02-H4"
 			(at 203.2 53.34 0)
 			(effects
 				(font
@@ -7942,7 +7942,7 @@
 				)
 			)
 		)
-		(property "Footprint" "W25Q32JVSSIQ:SOIC127P790X216-8N"
+		(property "Footprint" "ESP32 IoT Project Libraries:SOIC127P790X216-8N"
 			(at 77.47 143.51 0)
 			(effects
 				(font
@@ -8467,7 +8467,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "ESP32 IoT Project Libraries:LEDC2012X120N"
 			(at 130.81 162.23 0)
 			(effects
 				(font
@@ -8808,7 +8808,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:SiliconLabs_QFN-20-1EP_3x3mm_P0.5mm"
+		(property "Footprint" "Package_DFN_QFN:SiliconLabs_QFN-20-1EP_3x3mm_P0.5mm_EP1.8x1.8mm"
 			(at 107.95 92.71 0)
 			(effects
 				(font
@@ -9341,7 +9341,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "ESP32 IoT Project Libraries:LEDC2012X120N"
 			(at 129.54 178.74 0)
 			(effects
 				(font
@@ -9751,7 +9751,7 @@
 				)
 			)
 		)
-		(property "Footprint" "GSD090012SEU:AMPHENOL_GSD090012SEU"
+		(property "Footprint" "ESP32 IoT Project Libraries:AMPHENOL_GSD090012SEU"
 			(at 190.5 127 0)
 			(effects
 				(font
