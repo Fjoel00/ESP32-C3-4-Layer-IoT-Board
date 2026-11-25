@@ -5,8 +5,9 @@
 	(uuid "382f43dc-9520-488d-9e1c-8b7cca928d11")
 	(paper "A4")
 	(title_block
-		(title "ESP32 IoT 4 Layers")
-		(date "2026-11-17")
+		(title "ESP32-C3 IoT 4 Layers - Alimentación y Carga LiPo")
+		(date "2026-11-25")
+		(rev "v1.0")
 	)
 	(lib_symbols
 		(symbol "0ZCH0110AF2E:0ZCH0110AF2E"
@@ -970,25 +971,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "VR"
-				(at -12.7 6.08 0)
+			(property "Reference" "VR1"
+				(at 0 10.16 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
 				)
 			)
 			(property "Value" "LM1117MPX-3.3_NOPB"
-				(at -12.7 -9.08 0)
+				(at 0 7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
 				)
 			)
-			(property "Footprint" "LM1117MPX-3.3_NOPB:VREG_LM1117MPX-3.3_NOPB"
+			(property "Footprint" "ESP32 IoT Project Libraries:VREG_LM1117MPX-3.3"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1166,7 +1165,27 @@
 						)
 					)
 				)
-				(pin output line
+				(pin power_in line
+					(at 17.78 -5.08 180)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(symbol "LM1117MPX-3.3_NOPB_1_0"
+				(pin passive line
 					(at 17.78 2.54 180)
 					(length 5.08)
 					(name "VOUT_2"
@@ -1184,7 +1203,7 @@
 						)
 					)
 				)
-				(pin output line
+				(pin power_out line
 					(at 17.78 0 180)
 					(length 5.08)
 					(name "VOUT_4"
@@ -1195,24 +1214,6 @@
 						)
 					)
 					(number "4"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 17.78 -5.08 180)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -2026,7 +2027,7 @@
 					)
 				)
 			)
-			(property "Footprint" "QFN20_4x4MC_MCH"
+			(property "Footprint" "ESP32 IoT Project Libraries:QFN50P400X400X100-21N"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2658,24 +2659,6 @@
 						(type none)
 					)
 				)
-				(pin output line
-					(at 0 0 0)
-					(length 7.62)
-					(name "OUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin input line
 					(at 0 -2.54 0)
 					(length 7.62)
@@ -2849,24 +2832,6 @@
 						)
 					)
 					(number "21"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 86.36 -2.54 180)
-					(length 7.62)
-					(name "OUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "20"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3049,6 +3014,42 @@
 					(fill
 						(type color)
 						(color 255 255 194 1)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 7.62)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 86.36 -2.54 180)
+					(length 7.62)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
 				)
 			)
@@ -4372,6 +4373,12 @@
 		(uuid "b73eeb41-7674-4c70-9e0d-210d013746a5")
 	)
 	(junction
+		(at 44.45 142.24)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0149c3c7-277e-4ee7-a116-1b70963de380")
+	)
+	(junction
 		(at 118.11 142.24)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4382,12 +4389,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "123fd189-d06a-44b5-ae58-5ac36484832a")
-	)
-	(junction
-		(at 176.53 71.12)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1350c03c-68b6-4866-8037-875f5d97201b")
 	)
 	(junction
 		(at 181.61 50.8)
@@ -4480,12 +4481,6 @@
 		(uuid "f044fd4d-fda5-481b-adde-3991904b4ffc")
 	)
 	(junction
-		(at 267.97 133.35)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f3cc46c6-43f0-4d5c-847d-1b6673be2abe")
-	)
-	(junction
 		(at 26.67 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4496,6 +4491,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f73183f6-008c-490a-88b9-45148f5417b4")
+	)
+	(junction
+		(at 87.63 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fffa3a30-2cb8-45fa-b939-a149733b3698")
 	)
 	(no_connect
 		(at 92.71 152.4)
@@ -4586,16 +4587,6 @@
 			(type default)
 		)
 		(uuid "0a1c5bf0-54c5-4131-87ac-e7287906ee4a")
-	)
-	(wire
-		(pts
-			(xy 267.97 129.54) (xy 267.97 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0aded0aa-6c5b-47be-b1f5-a99125f8210e")
 	)
 	(wire
 		(pts
@@ -4779,6 +4770,16 @@
 	)
 	(wire
 		(pts
+			(xy 87.63 29.21) (xy 87.63 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2602b7b9-7d42-4b13-8787-25e87b3e9185")
+	)
+	(wire
+		(pts
 			(xy 175.26 54.61) (xy 177.8 54.61)
 		)
 		(stroke
@@ -4829,7 +4830,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 71.12) (xy 176.53 73.66)
+			(xy 176.53 62.23) (xy 176.53 73.66)
 		)
 		(stroke
 			(width 0)
@@ -4869,16 +4870,6 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 71.12) (xy 176.53 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "367cdfa0-9765-46b3-8fdf-675d6cd2dc8f")
-	)
-	(wire
-		(pts
 			(xy 187.96 85.09) (xy 187.96 87.63)
 		)
 		(stroke
@@ -4896,6 +4887,16 @@
 			(type default)
 		)
 		(uuid "3c1a7aab-2d27-42e4-876d-c21f264f25bc")
+	)
+	(wire
+		(pts
+			(xy 87.63 36.83) (xy 88.9 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f287ff8-dbe1-4ac5-ab03-1ff6eca2ce34")
 	)
 	(wire
 		(pts
@@ -4989,7 +4990,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 142.24) (xy 52.07 142.24)
+			(xy 36.83 142.24) (xy 44.45 142.24)
 		)
 		(stroke
 			(width 0)
@@ -5389,13 +5390,13 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 62.23) (xy 176.53 71.12)
+			(xy 83.82 36.83) (xy 87.63 36.83)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a13c7e7f-6519-49f9-b957-1c93827b468e")
+		(uuid "a7188a22-3488-4c38-bb20-3e41da508c5b")
 	)
 	(wire
 		(pts
@@ -5476,6 +5477,16 @@
 			(type default)
 		)
 		(uuid "b783f117-fdf6-4445-b7f8-b062f34dee47")
+	)
+	(wire
+		(pts
+			(xy 44.45 142.24) (xy 52.07 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b856dac6-77b7-41f2-9c0c-1f24c5d35ae9")
 	)
 	(wire
 		(pts
@@ -5788,7 +5799,7 @@
 		(uuid "fe578d23-a3c6-4f4f-bce7-7f09d19722be")
 	)
 	(label "VBUS"
-		(at 48.26 142.24 180)
+		(at 36.83 142.24 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7149,73 +7160,6 @@
 			(project "ESP32-IoT-4-Layer"
 				(path "/382f43dc-9520-488d-9e1c-8b7cca928d11"
 					(reference "#PWR07")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 168.91 71.12 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3166069e-aa3f-485f-b562-62b0f6af1fae")
-		(property "Reference" "#FLG02"
-			(at 167.005 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 165.1 71.1199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 168.91 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 168.91 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 168.91 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8ca4fc43-7c7d-4c49-baf8-ca055468ddb1")
-		)
-		(instances
-			(project "ESP32-IoT-4-Layer"
-				(path "/382f43dc-9520-488d-9e1c-8b7cca928d11"
-					(reference "#FLG02")
 					(unit 1)
 				)
 			)
@@ -8801,72 +8745,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 267.97 129.54 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7ef3ad07-e09b-4491-a6da-860076300bff")
-		(property "Reference" "#FLG03"
-			(at 267.97 127.635 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 267.97 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 267.97 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 267.97 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 267.97 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "97b9f29f-d520-4312-a6f3-bb79b431b3f7")
-		)
-		(instances
-			(project "ESP32-IoT-4-Layer"
-				(path "/382f43dc-9520-488d-9e1c-8b7cca928d11"
-					(reference "#FLG03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 184.15 142.24 0)
 		(unit 1)
@@ -9531,6 +9409,136 @@
 			(project ""
 				(path "/382f43dc-9520-488d-9e1c-8b7cca928d11"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 87.63 29.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "af8adb78-9a15-4338-970f-7e0de008195d")
+		(property "Reference" "#FLG03"
+			(at 87.63 27.305 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 93.726 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 87.63 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 87.63 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 87.63 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7905828d-3c7a-4fa0-9464-5ad5613c610e")
+		)
+		(instances
+			(project "ESP32-IoT-4-Layer"
+				(path "/382f43dc-9520-488d-9e1c-8b7cca928d11"
+					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 44.45 142.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bdd3eb84-e755-4070-aa13-ddd4105e96ec")
+		(property "Reference" "#FLG02"
+			(at 44.45 140.335 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 44.45 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 44.45 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 44.45 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 44.45 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d13e8107-cc51-4415-96e6-cb843c87589a")
+		)
+		(instances
+			(project ""
+				(path "/382f43dc-9520-488d-9e1c-8b7cca928d11"
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
@@ -10284,7 +10292,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 88.9 36.83 90)
+		(at 83.82 36.83 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10293,7 +10301,7 @@
 		(fields_autoplaced yes)
 		(uuid "ec9f4f7f-39cc-42a8-a25c-dd65e1d2089b")
 		(property "Reference" "#PWR059"
-			(at 92.71 36.83 0)
+			(at 87.63 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10302,7 +10310,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 85.09 36.8299 90)
+			(at 80.01 36.8299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10311,7 +10319,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 88.9 36.83 0)
+			(at 83.82 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10320,7 +10328,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 88.9 36.83 0)
+			(at 83.82 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10329,7 +10337,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 88.9 36.83 0)
+			(at 83.82 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)

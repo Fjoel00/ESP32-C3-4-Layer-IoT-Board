@@ -5,7 +5,9 @@
 	(uuid "9ed9caf2-f1aa-4740-b977-a434d27161d7")
 	(paper "A4")
 	(title_block
-		(title "ESP32 C3, USB y Memoria Flash")
+		(title "ESP32-C3, Puente USB-UART y Memorias")
+		(date "2026-11-25")
+		(rev "v1.0")
 	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"
